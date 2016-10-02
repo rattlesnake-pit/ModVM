@@ -695,7 +695,7 @@ bool addFunc()//JL
           changeType = theStack.top();
           theStack.pop();
           newDoubleValue = changeType.data.f + tempBlock.data.d;
-          tempBlock.typecode = d;
+          tempBlock.typecode = 'd';
           tempBlock.data.d = newDoubleValue;
           theStack.push(tempBlock);
           break;
@@ -792,7 +792,7 @@ bool subFunc() //JL
           changeType = theStack.top();
           theStack.pop();
           newDoubleValue = changeType.data.f - tempBlock.data.d;
-          tempBlock.typecode = d;
+          tempBlock.typecode = 'd';
           tempBlock.data.d = newDoubleValue;
           theStack.push(tempBlock);
           break;
@@ -890,7 +890,7 @@ bool mulFunc()
           changeType = theStack.top();
           theStack.pop();
           newDoubleValue = changeType.data.f * tempBlock.data.d;
-          tempBlock.typecode = d;
+          tempBlock.typecode = 'd';
           tempBlock.data.d = newDoubleValue;
           theStack.push(tempBlock);
           break;
@@ -991,7 +991,7 @@ bool divFunc()
             changeType = theStack.top();
             theStack.pop();
             newDoubleValue = changeType.data.f / tempBlock.data.d;
-            tempBlock.typecode = d;
+            tempBlock.typecode = 'd';
             tempBlock.data.d = newDoubleValue;
             theStack.push(tempBlock);
             break;
